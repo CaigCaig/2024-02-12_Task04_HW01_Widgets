@@ -21,17 +21,14 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pB_nextStep_toggled(bool checked)
 {
-    if (checked)
+    int value = ui->prB_progress->value();
+    if (value >= 10)
     {
-        int value = ui->prB_progress->value();
-        if (value >= 10)
-        {
-            ui->prB_progress->setValue(0);
-        }
-        else
-        {
-            ui->prB_progress->setValue(++value);
-        }
+        ui->prB_progress->setValue(0);
+    }
+    else
+    {
+        ui->prB_progress->setValue(++value);
     }
 }
 
