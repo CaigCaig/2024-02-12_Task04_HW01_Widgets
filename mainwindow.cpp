@@ -6,12 +6,24 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
     ui->rb_up->setChecked(true);
+    ui->rb_up->setText("По возрастанию");
+    ui->rb_down->setText("По убыванию");
+    ui->rb_noth->setText("Без сортировки");
+
     ui->cB_list->addItem("Текстовый");
     ui->cB_list->addItem("Целочисленный");
     ui->cB_list->addItem("Дробный");
     ui->cB_list->addItem("Денежный");
     ui->cB_list->addItem("Время");
+
+    ui->pB_nextStep->setText("Следующий шаг");
+    ui->pB_nextStep->setCheckable(true);
+
+    ui->prB_progress->setValue(0);
+    ui->prB_progress->setMinimum(0);
+    ui->prB_progress->setMaximum(10);
 }
 
 MainWindow::~MainWindow()

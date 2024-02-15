@@ -48,7 +48,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>По возрастанию</string>
+      <string>RadioButton</string>
      </property>
     </widget>
     <widget class="QRadioButton" name="rb_down">
@@ -61,7 +61,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>По убыванию</string>
+      <string>RadioButton</string>
      </property>
     </widget>
     <widget class="QRadioButton" name="rb_noth">
@@ -74,7 +74,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>Без сортировки</string>
+      <string>RadioButton</string>
      </property>
     </widget>
    </widget>
@@ -87,11 +87,14 @@
       <height>23</height>
      </rect>
     </property>
+    <property name="minimum">
+     <number>-1</number>
+    </property>
     <property name="maximum">
-     <number>10</number>
+     <number>99</number>
     </property>
     <property name="value">
-     <number>0</number>
+     <number>50</number>
     </property>
    </widget>
    <widget class="QPushButton" name="pB_nextStep">
@@ -104,7 +107,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Следующий шаг</string>
+     <string>PushButton</string>
     </property>
     <property name="checkable">
      <bool>true</bool>
